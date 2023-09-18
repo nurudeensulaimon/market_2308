@@ -1,5 +1,3 @@
-require './lib/vendor'
-
 class Market 
 attr_reader :name,
             :vendors
@@ -13,9 +11,18 @@ attr_reader :name,
   end
 
   def vendor_names
-
     @vendors.map do |vendor|
       vendor.name
     end 
+  end
+
+  def vendors_that_sell(item)
+    list = []
+    @vendors.each do |vendor|
+      if vendor.inventory.include?(item)
+        list << vendor
+      end
+    end
+    list
   end
 end
