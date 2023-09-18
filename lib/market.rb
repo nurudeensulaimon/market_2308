@@ -17,12 +17,12 @@ attr_reader :name,
   end
 
   def vendors_that_sell(item)
-    list = []
+    element = []
     @vendors.each do |vendor|
       if vendor.inventory.include?(item)
-        list << vendor
+        element << vendor
       end
     end
-    list
+    element 
   end
 end

@@ -1,5 +1,5 @@
 require './lib/item'
-#require './lib/vendor'
+require './lib/vendor'
 require 'rspec'
 require 'pry'
 
