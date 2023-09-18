@@ -161,7 +161,7 @@ pry(main)> market.vendors_that_sell(item4)
 #=> [#<Vendor:0x00007fe1349bed40...>]
 
 pry(main)> vendor1.potential_revenue
-#=> 29.75
+ #=> 29.75
 
 pry(main)> vendor2.potential_revenue
 #=> 345.00
